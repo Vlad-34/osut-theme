@@ -10,7 +10,10 @@ export const isMobile = (width = '768px') => {
 export const isDarkMode = () => {
   const darkModeMatcher = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)')
 
-  return darkModeMatcher && darkModeMatcher.matches
+  // TODO: Make sure every website component is properly checking for dark mode
+  // before re-enabling it.
+  // return darkModeMatcher && darkModeMatcher.matches
+  return false;
 }
 
 export const formatDate = (date) => {
